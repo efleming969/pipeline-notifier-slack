@@ -17,5 +17,5 @@ runs:
     - id: time-stamp
       run: echo "time='this time is'" >> $GITHUB_OUTPUT
       shell: bash
-    - run: hello.sh
+    - run: ls -a
       shell: bash
