@@ -17,5 +17,7 @@ runs:
     - id: time-stamp
       run: echo "time='this time is'" >> $GITHUB_OUTPUT
       shell: bash
-    - run: ls -a
+    - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
+      shell: bash
+    - run: goodbye.sh
       shell: bash
